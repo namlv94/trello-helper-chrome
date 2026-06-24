@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trello Helper — Focus your boards, filter your cards, see the big picture</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231868db'/%3E%3Crect x='7' y='7' width='7' height='18' rx='1.6' fill='white'/%3E%3Crect x='18' y='7' width='7' height='11' rx='1.6' fill='white'/%3E%3C/svg%3E">
 <meta name="description" content="A free Chrome extension that adds the board controls Trello is missing: hide lists, spotlight what matters, filter cards, and turn any board into instant charts.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,6 +141,15 @@
   .privacy .lock{width:60px;height:60px;border-radius:16px;background:#e8f0fe;color:var(--blue);
     display:flex;align-items:center;justify-content:center;margin:0 auto 22px;}
   .privacy p{color:var(--ink-2);font-size:18px;margin-top:12px;}
+  .privacy .detail{max-width:760px;margin:34px auto 0;text-align:left;background:#fff;
+    border:1px solid var(--line);border-radius:var(--radius);padding:30px 34px;box-shadow:var(--shadow);}
+  .privacy .detail h3{font-size:18px;margin:22px 0 10px;}
+  .privacy .detail h3:first-child{margin-top:0;}
+  .privacy .detail p{font-size:15.5px;margin-top:0;color:var(--ink-2);}
+  .privacy .detail ul{list-style:none;margin:10px 0 0;display:flex;flex-direction:column;gap:9px;}
+  .privacy .detail li{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:var(--ink);}
+  .privacy .detail li svg{flex:0 0 18px;margin-top:3px;color:var(--green);}
+  .privacy .updated{margin-top:24px;font-size:13.5px;color:var(--ink-3);}
 
   /* final cta */
   .final{background:radial-gradient(700px 400px at 50% -40%,rgba(40,110,210,.35),transparent 60%),var(--dark);
@@ -339,7 +349,34 @@
       <div class="lock"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
       <span class="pill green">Privacy first</span>
       <h2 style="margin-top:14px">Your data never leaves your browser</h2>
-      <p>Trello Helper does not collect, transmit, or sell anything. Every setting is stored locally with Chrome storage and stays on your device. The extension only runs on Trello board pages.</p>
+      <p>Trello Helper does not collect, transmit, or sell anything. Every setting is stored locally with Chrome storage and stays on your device.</p>
+
+      <div class="detail">
+        <h3>What the extension stores</h3>
+        <p>To make your preferences persist, Trello Helper saves the following on your own device using the browser's local <code>chrome.storage</code>:</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4L19 6"/></svg> Which lists you've hidden or highlighted, per board</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4L19 6"/></svg> Your filter conditions and report settings</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4L19 6"/></svg> Daily card-count snapshots used to draw the flow chart</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4L19 6"/></svg> Your card-detail default (show or hide) preference</li>
+        </ul>
+
+        <h3>What we don't do</h3>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4L19 6"/></svg> No data is collected, sent to us, or sent to any server</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4L19 6"/></svg> No data is shared with or sold to third parties</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4L19 6"/></svg> No analytics, no tracking, no ads, no account required</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l4 4L19 6"/></svg> The extension runs only on Trello board pages (trello.com)</li>
+        </ul>
+
+        <h3>Removing your data</h3>
+        <p>Because everything is stored locally, removing the extension — or clearing your browser data — deletes all of it. Nothing remains anywhere else.</p>
+
+        <h3>Contact</h3>
+        <p>Questions about privacy? <a href="https://github.com/namlv94/trello-helper-chrome/issues" style="color:var(--blue);font-weight:600">Open an issue on GitHub</a>.</p>
+
+        <div class="updated">Last updated: June 2026</div>
+      </div>
     </div>
   </div>
 </section>
