@@ -16,14 +16,14 @@
 
 ## 📸 Screenshots
 
-<!--
-Add your screenshots here. Tip: drag images into the GitHub README editor,
-or commit them to a /screenshots folder and reference them like below.
--->
+### 🔦 Highlight (focus) lists
+![Highlight focus lists](https://raw.githubusercontent.com/namlv94/trello-helper-chrome/refs/heads/main/screenshots/02-highlight-focus.png)
 
-| Hide & Highlight | Card Filter | Reports & Charts |
-|---|---|---|
-| ![Hide and highlight lists](screenshots/highlight.png) | ![Filter cards](screenshots/filter.png) | ![Reports](screenshots/report.png) |
+### 🔍 Card filter
+![Filter cards](https://raw.githubusercontent.com/namlv94/trello-helper-chrome/refs/heads/main/screenshots/03-filter-cards.png)
+
+### 📊 Reports & charts
+![Reports and charts](https://raw.githubusercontent.com/namlv94/trello-helper-chrome/refs/heads/main/screenshots/04-reports-charts.png)
 
 ---
 
